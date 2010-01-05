@@ -29,7 +29,7 @@ token = %x{#{DIALOG} -a #{e_sh NIB} -p #{e_sh params.to_plist}}
 x = Thread.new do
 
   bundles = [ ]
-  open("|svn list --xml http://macromates.com/svn/Bundles/trunk/Bundles") do |io|
+  open("|svn list --xml http://svn.textmate.org/trunk/Bundles") do |io|
 
     doc = REXML::Document.new io
     doc.elements.to_a("//entry/name").each do |node|
@@ -49,7 +49,7 @@ x = Thread.new do
 
     bundles.each do |bundle|
       puts "Load #{bundle['path']}…"
-      plist = open("|svn cat http://macromates.com/svn/Bundles/trunk/Bundles/#{url_encode bundle['path']}/info.plist") do |svn|
+      plist = open("|svn cat http://svn.textmate.org/trunk/Bundles/#{url_encode bundle['path']}/info.plist") do |svn|
 				OSX::PropertyList.load(svn) 
 			end
       # puts "Got #{plist}"

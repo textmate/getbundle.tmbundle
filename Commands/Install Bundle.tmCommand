@@ -12,7 +12,7 @@ SVN="${TM_BUNDLE_SUPPORT}/bin/svn"
 REV=$(&lt; "$TM_SUPPORT_PATH/version")
 SVN_OPTS="-r$REV --no-auth-cache --non-interactive"
 
-BASE_URL=http://macromates.com/svn/Bundles/trunk/
+BASE_URL=http://svn.textmate.org/trunk/
 
 bundlelist (){ 
   eval '"$SVN"' list "$SVN_OPTS" '"${BASE_URL}/Bundles/"' \

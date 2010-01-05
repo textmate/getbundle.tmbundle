@@ -13,7 +13,7 @@ then
  svn up . --no-auth-cache --non-interactive
 else
  mkdir ~/Library/Application\ Support/TextMate/Support
- svn co http://macromates.com/svn/Bundles/trunk/Support/ ~/Library/Application\ Support/TextMate/Support --no-auth-cache --non-interactive
+ svn co http://svn.textmate.org/trunk/Support/ ~/Library/Application\ Support/TextMate/Support --no-auth-cache --non-interactive
 fi
 
 $(cat &lt;&lt;EOF &gt; ~/Library/LaunchAgents/com.macromates.textmate.bundleupdate.plist
