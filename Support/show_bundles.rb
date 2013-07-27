@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby -wKU
+#!/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -wKU
 # encoding: utf-8
 
 SUPPORT = ENV['TM_SUPPORT_PATH']

@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby
+#!/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby
 require "#{ENV['TM_SUPPORT_PATH']}/lib/textmate"
 # 
 # if %x{ defaults read /System/Library/CoreServices/SystemVersion ProductVersion } =~ /\A10\.4/
